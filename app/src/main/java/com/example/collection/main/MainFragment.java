@@ -14,7 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.collection.R;
-import com.example.collection.videoplayer.VideoActivity;
+import com.example.collection.camera.PreviewActivity;
 
 public class MainFragment extends Fragment implements View.OnClickListener {
 
@@ -29,7 +29,7 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.main_fragment, container, false);
-        root.findViewById(R.id.tv_videoview).setOnClickListener(this);
+        root.findViewById(R.id.native_preview).setOnClickListener(this);
         return root;
     }
 
@@ -43,8 +43,8 @@ public class MainFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.tv_videoview:
-                startActivity(new Intent(getContext(), VideoActivity.class));
+            case R.id.native_preview:
+                startActivity(new Intent(getContext(), PreviewActivity.class));
                 break;
         }
     }

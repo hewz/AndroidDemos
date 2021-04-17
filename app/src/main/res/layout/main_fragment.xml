@@ -9,10 +9,10 @@
     android:padding="10dp">
 
     <TextView
-        android:id="@+id/tv_videoview"
+        android:id="@+id/native_preview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/videoview_test"
+        android:text="@string/native_preview_test"
         android:background="@color/light_blue_600"
         android:textColor="@color/white"
         android:gravity="center"
